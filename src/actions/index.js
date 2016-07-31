@@ -1,13 +1,15 @@
 import * as types from '../utils/constants';
 
-export function increment() {
+export function increment(by) {
   return {
-    type: types.INCREMENT
+    type: types.INCREMENT,
+    by
   };
 }
 
-export function decrement() {
+export function decrement(by) {
   return {
-    type: types.DECREMENT
+    type: types.DECREMENT,
+    by
   };
 }
