@@ -6,5 +6,5 @@ import store from './store';
 
 ReactDOM.render(
   <Root store={store} />,
-  document.getElementById('app')
+  document.getElementById('root')
 );
