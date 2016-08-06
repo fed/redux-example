@@ -8,6 +8,7 @@ export default class Counter extends React.Component {
       by: 1
     };
   }
+
   handleIncrement() {
     this.props.actions.increment(this.state.by);
   }

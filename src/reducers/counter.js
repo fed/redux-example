@@ -1,6 +1,8 @@
 import * as types from '../utils/constants';
 
-export default function counter(state = 0, action) {
+const initialState = 0;
+
+export default function counter(state = initialState, action) {
   switch (action.type) {
     case types.INCREMENT:
       return state + Number(action.by);

@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import Counter from './counter';
 import * as actionCreators from '../actions';
 
-export class App extends React.Component {
+class App extends React.Component {
   render() {
     const {counter, actions} = this.props;
 
