@@ -2,7 +2,7 @@
 
 Building a simple counter example to illustrate how Redux works.
 
-![Redux Flow](http://i.imgur.com/Hi4RwU8.png)
+![Redux Flow](http://i.imgur.com/7nz77rP.jpg)
 
 ## Prerequisites
 
