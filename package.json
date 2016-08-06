@@ -1,6 +1,6 @@
 {
   "name": "redux-counter-example",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Redux Counter Example",
   "author": "Federico Knüssel <fknussel@gmail.com>",
   "license": "MIT",
