@@ -2,7 +2,23 @@
 
 Building a simple counter example to illustrate how Redux works.
 
-![Redux Flow](http://i.imgur.com/7nz77rP.jpg)
+![Redux Flow](http://i.imgur.com/ep8N1Ft.png)
+
+We know that React is just for views (often referred to as the `V` in `MVC`). The obvious question then is, where do I put all my state and logic?
+
+You may already be aware of [Flux](https://facebook.github.io/flux/), which is a style / pattern / architecture for designing web applications, most commonly ones that use React for rendering. There are several frameworks out there that implement the ideas of Flux, one of them being [Redux](http://redux.js.org/).
+
+Here's a very brief description of how Redux works:
+
+1. **Components** are given callback functions as props, which they call when a **UI event** happens.
+2. Those callbacks **create and dispatch actions** based on the event.
+3. **Reducers** process the actions, computing the new state.
+4. The new **state** of the whole application goes into a single **store**.
+5. **Components** receive the new state as props and **re-render themselves where needed**.
+
+Most of the above concepts are not unique to Redux, but Redux implements them in a very clean and simple way, with a [tiny API](http://redux.js.org/docs/api/index.html).
+
+![Redux Flow](http://i.imgur.com/QIfunUw.png)
 
 ## Prerequisites
 
