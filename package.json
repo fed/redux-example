@@ -1,12 +1,12 @@
 {
-  "name": "redux-counter-example",
+  "name": "redux-example",
   "version": "1.0.0",
   "description": "Redux Counter Example",
   "author": "Federico Knüssel <fknussel@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fknussel/redux-counter-example.git"
+    "url": "git+https://github.com/fknussel/redux-example.git"
   },
   "scripts": {
     "clean": "rimraf dist/",
@@ -14,7 +14,6 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
