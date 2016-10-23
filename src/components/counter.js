@@ -10,11 +10,11 @@ export default class Counter extends React.Component {
   }
 
   handleIncrement() {
-    this.props.actions.increment(this.state.by);
+    this.props.increment(this.state.by);
   }
 
   handleDecrement() {
-    this.props.actions.decrement(this.state.by);
+    this.props.decrement(this.state.by);
   }
 
   handleByChange(event) {
@@ -40,5 +40,6 @@ export default class Counter extends React.Component {
 
 Counter.propTypes = {
   counter: React.PropTypes.number.isRequired,
-  actions: React.PropTypes.object.isRequired
+  increment: React.PropTypes.func.isRequired,
+  decrement: React.PropTypes.func.isRequired
 };

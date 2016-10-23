@@ -1,12 +1,12 @@
-import * as types from '../utils/constants';
+import {INCREMENT, DECREMENT} from '../utils/constants';
 
 const initialState = 0;
 
 export default function counter(state = initialState, action) {
   switch (action.type) {
-    case types.INCREMENT:
+    case INCREMENT:
       return state + Number(action.by);
-    case types.DECREMENT:
+    case DECREMENT:
       return state - Number(action.by);
     default:
       return state;

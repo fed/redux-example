@@ -1,18 +1,17 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-
-import Counter from './counter';
 import * as actionCreators from '../actions';
+import Counter from './counter';
 
 class App extends React.Component {
   render() {
-    const {counter, actions} = this.props;
+    const {counter, increment, decrement} = this.props;
 
     return (
       <section className="main-app-container">
         <h1 className="main-app-nav">Redux Counter Example</h1>
-        <Counter counter={counter} actions={actions} />
+        <Counter counter={counter} increment={increment} decrement={decrement} />
       </section>
     );
   }
@@ -20,7 +19,8 @@ class App extends React.Component {
 
 App.propTypes = {
   counter: React.PropTypes.number.isRequired,
-  actions: React.PropTypes.object.isRequired
+  increment: React.PropTypes.func.isRequired,
+  decrement: React.PropTypes.func.isRequired
 };
 
 function mapStateToProps(state) {
@@ -30,9 +30,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(actionCreators, dispatch)
-  };
+  return bindActionCreators(actionCreators, dispatch);
 }
 
 export default connect(
